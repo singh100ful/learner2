@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {AppNavigation} from '@src/navigation/AppNavigation';
+import {AppProvider} from './provider/AppProvider';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -24,13 +25,15 @@ function App(): JSX.Element {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <AppNavigation />
-    </SafeAreaView>
+    <AppProvider>
+      <SafeAreaView style={backgroundStyle}>
+        <StatusBar
+          barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+          backgroundColor={backgroundStyle.backgroundColor}
+        />
+        <AppNavigation />
+      </SafeAreaView>
+    </AppProvider>
   );
 }
 

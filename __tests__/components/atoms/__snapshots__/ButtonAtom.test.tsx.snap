@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Atom renders correctly 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "#304FFE",
+        "borderRadius": 12,
+        "justifyContent": "center",
+        "padding": 22.5,
+      },
+      {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <View>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "flexShrink": 1,
+            "flexWrap": "wrap",
+          },
+          [
+            {
+              "color": "#252A48",
+              "fontSize": 24,
+              "fontWeight": "700",
+              "lineHeight": 28.56,
+            },
+            {
+              "color": "#FFFFFF",
+            },
+          ],
+        ]
+      }
+    >
+      Test button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button Atom renders with preset small 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "#304FFE",
+        "borderRadius": 7.5,
+        "justifyContent": "center",
+        "maxWidth": 180,
+        "padding": 7.5,
+      },
+      {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <View>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "flexShrink": 1,
+            "flexWrap": "wrap",
+          },
+          [
+            {
+              "color": "#252A48",
+              "fontSize": 24,
+              "fontWeight": "700",
+              "lineHeight": 28.56,
+            },
+            {
+              "color": "#FFFFFF",
+            },
+          ],
+        ]
+      }
+    >
+      title
+    </Text>
+  </View>
+</View>
+`;

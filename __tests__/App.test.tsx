@@ -12,6 +12,13 @@ import {it} from '@jest/globals';
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
-it('renders correctly', () => {
-  renderer.create(<App />);
+const sleep = (ms: number) =>
+  new Promise(resolve => setTimeout(() => resolve(true), ms));
+
+jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
+
+it('renders correctly', async () => {
+  const tree = renderer.create(<App />).toJSON();
+  expect(tree).toMatchSnapshot();
+  await sleep(10);
 });

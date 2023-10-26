@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTSafeAreaView
+  style={
+    {
+      "backgroundColor": "#F3F3F3",
+      "flex": 1,
+    }
+  }
+>
+  <RNCSafeAreaProvider
+    onInsetsChange={[Function]}
+    style={
+      {
+        "flex": 1,
+      }
+    }
+  >
+    <RNSScreenStack
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <RNSScreen
+        collapsable={false}
+        gestureResponseDistance={
+          {
+            "bottom": -1,
+            "end": -1,
+            "start": -1,
+            "top": -1,
+          }
+        }
+        nativeBackButtonDismissalEnabled={false}
+        onAppear={[Function]}
+        onDisappear={[Function]}
+        onDismissed={[Function]}
+        onGestureCancel={[Function]}
+        onHeaderBackButtonClicked={[Function]}
+        onNativeDismissCancelled={[Function]}
+        onTransitionProgress={[Function]}
+        onWillDisappear={[Function]}
+        replaceAnimation="push"
+        sheetAllowedDetents="large"
+        sheetCornerRadius={-1}
+        sheetExpandsWhenScrolledToEdge={true}
+        sheetGrabberVisible={false}
+        sheetLargestUndimmedDetent="all"
+        stackPresentation="push"
+        style={
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+        swipeDirection="horizontal"
+      >
+        <View
+          accessibilityElementsHidden={false}
+          importantForAccessibility="auto"
+          style={
+            {
+              "flex": 1,
+              "flexDirection": "column-reverse",
+            }
+          }
+        >
+          <View
+            collapsable={false}
+            style={
+              [
+                {
+                  "flex": 1,
+                },
+                {
+                  "backgroundColor": "rgb(242, 242, 242)",
+                },
+                undefined,
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "backgroundColor": "#304FFE",
+                    "padding": 15,
+                  }
+                }
+              >
+                <TextInput
+                  onChangeText={[Function]}
+                  onSubmitEditing={[Function]}
+                  style={
+                    {
+                      "backgroundColor": "#FFFFFF",
+                      "borderRadius": 15,
+                      "fontSize": 16,
+                      "padding": 10,
+                    }
+                  }
+                  value=""
+                />
+              </View>
+              <RCTScrollView
+                ItemSeparatorComponent={[Function]}
+                data={null}
+                getItem={[Function]}
+                getItemCount={[Function]}
+                keyExtractor={[Function]}
+                onContentSizeChange={[Function]}
+                onLayout={[Function]}
+                onMomentumScrollBegin={[Function]}
+                onMomentumScrollEnd={[Function]}
+                onScroll={[Function]}
+                onScrollBeginDrag={[Function]}
+                onScrollEndDrag={[Function]}
+                removeClippedSubviews={false}
+                renderItem={[Function]}
+                scrollEventThrottle={50}
+                stickyHeaderIndices={[]}
+                style={
+                  {
+                    "marginHorizontal": 24,
+                  }
+                }
+                viewabilityConfigCallbackPairs={[]}
+              >
+                <View />
+              </RCTScrollView>
+            </View>
+          </View>
+        </View>
+        <RNSScreenStackHeaderConfig
+          backButtonInCustomView={false}
+          backTitleVisible={true}
+          backgroundColor="#304FFE"
+          color="#FFFFFF"
+          direction="ltr"
+          disableBackButtonMenu={false}
+          hidden={false}
+          hideBackButton={false}
+          largeTitleHideShadow={false}
+          title="Home"
+          titleColor="#FFFFFF"
+          topInsetEnabled={false}
+          translucent={false}
+        />
+      </RNSScreen>
+    </RNSScreenStack>
+  </RNCSafeAreaProvider>
+</RCTSafeAreaView>
+`;

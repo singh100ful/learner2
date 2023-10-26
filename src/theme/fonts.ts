@@ -18,8 +18,8 @@ export const defaultTexts = {
     ...scaleFont(16),
   },
   caption: {
-    fontWeight: '300',
+    fontWeight: '500',
     color: colorPresets.primaryText,
-    ...scaleFont(12),
+    ...scaleFont(14),
   },
 };
