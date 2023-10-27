@@ -15,6 +15,12 @@ import {
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {AppNavigation} from '@src/navigation/AppNavigation';
 import {AppProvider} from './provider/AppProvider';
+import SplashScreen from 'react-native-splash-screen';
+import * as Sentry from '@sentry/react-native';
+
+Sentry.init({
+  dsn: 'https://2f3cb0cd86a2e9de8b846728003fa5ca@o4506120651800576.ingest.sentry.io/4506120657240064',
+});
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -23,6 +29,10 @@ function App(): JSX.Element {
     flex: 1,
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  // React.useEffect(() => {
+  //   SplashScreen.hide();
+  // }, []);
 
   return (
     <AppProvider>

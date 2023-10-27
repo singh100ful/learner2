@@ -1,5 +1,6 @@
 import {createAsyncThunk} from '@reduxjs/toolkit';
 import {baseUrl} from '@src/constants/appConstants';
+import * as Sentry from '@sentry/react-native';
 
 export const fetchMovies = createAsyncThunk(
   'movie/get',
@@ -15,7 +16,7 @@ export const fetchMovies = createAsyncThunk(
         return data.Search;
       })
       .catch(err => {
-        console.log(err);
+        Sentry.captureException(err);
       });
   },
 );
@@ -33,6 +34,8 @@ export const movieDetails = createAsyncThunk(
       .then(data => {
         return data;
       })
-      .catch(err => [console.log(err)]);
+      .catch(err => {
+        Sentry.captureException(err);
+      });
   },
 );

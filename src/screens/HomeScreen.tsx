@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {FlatList, Pressable, TextInput, View} from 'react-native';
+import {FlatList, Platform, Pressable, TextInput, View} from 'react-native';
 import {SeparatorAtom} from '@src/components/atoms/SeparatorAtom';
 import {moderateScale} from '@src/theme/scale';
 import {MovieMolecule} from '@src/components/molecule/MovieMolecule';
@@ -79,6 +79,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
       <FlatList
         style={{marginHorizontal: moderateScale(16)}}
         data={movies}
+        initialNumToRender={Platform.OS === 'web' ? 12 : 6}
         ItemSeparatorComponent={() => <SeparatorAtom />}
         renderItem={({item, index}) => {
           return (
